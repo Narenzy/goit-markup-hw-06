@@ -44,6 +44,7 @@ img {
   padding-right: 15px;
   margin: auto;
   width: 1158px;
+  outline: 1px red solid;
 }
 /* #endregion */
 /* #region header */
