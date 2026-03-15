@@ -421,6 +421,7 @@ img {
 @media only screen and (min-width: 768px) {
   .hero-title {
     max-width: 496px;
+    margin-bottom: 36px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07143;
@@ -609,6 +610,7 @@ img {
     line-height: 1.11111;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: left;
   }
 }
 
@@ -619,6 +621,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: left;
   }
 }
 
@@ -654,9 +657,22 @@ img {
 /* #endregion features */
 /* #region team */
 .team-section {
-  padding: 120px 0;
+  padding: 96px 0;
   background: #f4f4fd;
 }
+
+@media only screen and (min-width: 768px) {
+  .team-section {
+    padding: 96px 0;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .team-section {
+    padding: 120px 0;
+  }
+}
+
 .team-section .container {
 }
 .container-team-text {
@@ -861,8 +877,21 @@ img {
 /* #endregion team */
 /* #region portfolio */
 .our-portfolio {
-  padding: 120px 0px;
+  padding: 96px 0px;
 }
+
+@media only screen and (min-width: 768px) {
+  .our-portfolio {
+    padding: 96px 0;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .our-portfolio {
+    padding: 120px 0;
+  }
+}
+
 .our-portfolio .container {
 }
 .container-portfolio-text {
@@ -900,7 +929,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 24px;
-    row-gap: 48px;
+    row-gap: 72px;
   }
 }
 
@@ -915,24 +944,24 @@ img {
 }
 
 .portfolio-item {
-  flex-basis: calc((100% - 48px) / 3);
-  cursor: pointer;
+  width: 100%;
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media only screen and (min-width: 768px) {
   .portfolio-item {
     flex-basis: calc((100% - 24px) / 2);
-    cursor: pointer;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .portfolio-item {
     flex-basis: calc((100% - 48px) / 3);
-    cursor: pointer;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: none;
   }
 }
 
